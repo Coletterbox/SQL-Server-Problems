@@ -102,6 +102,12 @@ group by continent
 
 ### Students contains three columns ID, Name and Marks.
 
+| Column | Type |
+|--------|------|
+| ID | Integer |
+| Name | String |
+| Marks | Integer |
+
 ### Grades contains the following data:
 
 | Grade | Min_Mark | Max_Mark |
