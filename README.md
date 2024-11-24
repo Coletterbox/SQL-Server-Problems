@@ -189,6 +189,7 @@ ii as (
 select age, min(coins_needed) as min_coins, [power] from i
 group by age, [power]
 )
+-- rejoining ID
 select i.id, ii.age, min_coins, ii.power from ii
 inner join i on ii.age = i.age and ii.power = i.power and i.coins_needed = min_coins
 order by ii.power desc, ii.age desc
