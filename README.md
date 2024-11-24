@@ -186,8 +186,8 @@ with i as (
     where is_evil = 0
 ),
 ii as (
-select age, min(coins_needed) as min_coins, [power] from i
-group by age, [power]
+    select age, min(coins_needed) as min_coins, [power] from i
+    group by age, [power]
 )
 -- rejoining ID
 select i.id, ii.age, min_coins, ii.power from ii
